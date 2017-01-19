@@ -1,0 +1,8 @@
+
+jenkins:
+  image: jenkinsci/jenkins:2.0-rc-1
+  ports:
+    - "5000:8080"
+    - "50000:50000"
+  volumes:
+    - ./jenkins_home:/var/jenkins_home
